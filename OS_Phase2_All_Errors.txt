@@ -1,0 +1,42 @@
+//Opcode Error
+$AMJ 0001 0004 0001 
+GD 10 PD 10 Z
+$DTA
+Hello World
+$END 0001
+
+//Oprand error
+$AMJ 0001 0004 0001 
+GD F0 PD 10 H
+$DTA
+Hello World
+$END 0001
+
+//Time Limit Exceeded
+$AMJ 0001 0003 0001
+GD 10 PD 10 H
+$DTA
+Hello World
+$END 0001
+
+//Line Limit Exceeded
+$AMJ 0001 0004 0000
+GD 10 PD 10 H
+$DTA
+Hello World
+$END 0001
+
+//Out of data
+$AMJ 0001 0006 0001 
+GD 10 GD 20 PD 10 H
+$DTA
+Hello World
+$END 0001
+
+//Invalid Page fault
+$AMJ 0001 0005 0002 
+GD 10 PD 10 PD20 H
+$DTA
+Hello World
+$END 0001
+
